@@ -150,9 +150,6 @@ class FlurryCustomEventBanner extends com.mopub.mobileads.CustomEventBanner {
         @Override
         public void onAppExit(FlurryAdBanner adBanner) {
             Log.d(LOG_TAG, "onAppExit: Flurry banner ad exited app");
-
-            if (mListener != null) {
-                mListener.onLeaveApplication();
             }
         }
 
